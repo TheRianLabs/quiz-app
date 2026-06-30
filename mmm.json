@@ -1,0 +1,102 @@
+// const questions = [
+//   {
+//     question: "What does DOM stand for?",
+//     options: [
+//       "Document Object Model",
+//       "Data Object Model",
+//       "Document Order Method",
+//       "Data Order Method",
+//     ],
+//     answer: "Document Object Model",
+//   },
+//   // {
+//   //   question: "Which keyword declares a variable that caannot be reassigned?",
+//   //   options: [
+//   //     "let",
+//   //     "const",
+//   //     "var",
+//   //     "new"],
+//   //   answer: "const",
+//   // },
+// ];
+
+
+// let currentQuestion = 0;
+
+// const titleElement = document.querySelector(".js-title");
+// const optionElement = document.querySelector(".js-options");
+// const resultElement = document.querySelector(".js-show-result");
+// const nextButton = document.querySelector(".js-next-button");
+
+// questions.forEach((value, index) => {
+
+//   const questionTitle = value.question;
+//   const correctAnswer = value.answer;
+
+//   titleElement.innerHTML =
+//     `Question${index + 1}: ${questionTitle}`;
+
+//   value.options.forEach((option) => {
+//     const html = `
+//           <li class="option-style">
+//               <button class="js-btn-option btn-option">
+//                   ${option}
+//               </button>
+//           </li>`;
+//     optionElement.innerHTML += html;
+//   });
+
+//   const buttons = document.querySelectorAll(".js-btn-option");
+
+//   buttons.forEach((button) => {
+//     button.addEventListener("click", () => {
+//       if (button.innerText.trim() === correctAnswer) {
+//         result.classList.remove("wrong-color");
+//         result.classList.add("correct-color");
+//         result.innerHTML = "Correct!";
+//       } else {
+//         result.classList.remove("correct-color");
+//         result.classList.add("wrong-color");
+//         result.innerHTML = "Wrong!";
+//       }
+
+//       buttons.forEach((btn) => {
+//         btn.disabled = true;
+
+//         if (btn.innerText.trim() === correctAnswer) {
+//           btn.classList.add("correct-answer");
+//         }
+
+//         if (btn === button && btn.innerText.trim() !== correctAnswer) {
+//           btn.classList.add("wrong-answer");
+//         }
+//       });
+//     });
+//   });
+// });
+
+// const next = document.querySelector('.js-next-button');
+
+// next.addEventListener('click', () => {
+//   nextButton();
+// })
+
+// function nextButton() {
+//   if (next === true) {
+
+//   };
+// }
+
+// /*
+// function backMove() {
+//     const buttonElement = document.querySelector('.js-back-button');
+
+//     buttonElement.innerHTML;
+// }
+
+
+// function nextMove() {
+//     const buttonElement = document.querySelector('.js-next-button');
+    
+//     buttonElement.innerHTML;
+// } */
