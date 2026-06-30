@@ -165,19 +165,23 @@ nextButton.addEventListener('click', () => {
         
     } else {
         
-        titleElement.innerHTML = '🎉 Quiz Finished!';
+        titleElement.innerHTML = `<div class="quiz-finished">🎉 Quiz Finished!</div>`;
         optionElement.innerHTML = '';
 
         resultElement.classList.remove("correct-color", "wrong-color");
 
         resultElement.innerHTML = `
             <h2>Final Score: ${score}/${questions.length}</h2>
-            <p>Thanks for playing!</p>`;
+            <p class="thanks">Thanks for playing!</p>`;
 
         nextButton.disabled = true;
         previousButton.disabled = true;
 
+        previousButton.style.display = 'none';
+        nextButton.style.display = 'none';
         restartButton.style.display = 'block';
+
+        scoreBoard.style.display = 'none';
     }
     
 });
@@ -197,10 +201,15 @@ restartButton.addEventListener('click', () => {
     score = 0;
 
     displayQuestion();
-    scoreTracker();
-
+    
+    previousButton.style.display = 'block';
+    nextButton.style.display = 'block';
     restartButton.style.display = 'none';
+    
+    scoreBoard.style.display = 'block';
 
+    scoreTracker();
+    
     nextButton.disabled = true;
 });
 
