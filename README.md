@@ -49,6 +49,13 @@ This project helped me practice:
 
 ## 👨‍💻 Author
 
-Christian Aniekwe
+**Christian Aniekwe**
 
-If you have any feedback or suggestions, feel free to connect with me on X.
+I'm a frontend developer in progress, documenting my learning journey and building projects in public.
+
+### 🤝 Connect With Me
+
+- **X:** https://x.com/0xHol_mar
+- **GitHub:** https://github.com/TherianLabs
+
+If you have feedback, suggestions, or just want to connect, feel free to reach out!
