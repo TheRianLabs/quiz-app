@@ -8,7 +8,7 @@ https://therianlabs.github.io/quiz-app/
 
 ## 📸 Screenshot
 
-(Add a screenshot of the app here)
+![Quiz App Screenshot](src/assets/Screenshot.png)
 
 ## ✨ Features
 
